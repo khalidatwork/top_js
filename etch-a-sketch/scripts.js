@@ -8,9 +8,14 @@ function pexilate(elem){
     console.log("here")
 }
 
-for(let i = 0; i<150; i++){
+const N = 100
+
+for(let i = 0; i<N; i++){
     cell = document.createElement("div")
     cell.addEventListener("mouseover", pexilate)
+    cell.style.width = `calc(100% / ${N/2})`;
+    cell.style.height = `calc(100% / ${N/2})`;
+    
     gridContainer.appendChild(cell)
 }
 
