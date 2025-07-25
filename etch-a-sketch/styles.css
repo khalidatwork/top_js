@@ -8,10 +8,25 @@ h1{
 .gridContainer {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px auto;
+    border: 2px solid #333;
 }
 
-.gridContainer div {
-    background-color: white;
-    border: 1px solid black;
 
+.gridCell{
+    flex: 0 0 calc(100% / var(--grid-size));
+    height: var(--cell-size);
+    width: var(--cell-size);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.reset{
+    text-align: center;
 }
